@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ component install ianstormtaylor/alias
+    $ component install segmentio/alias
 
 ## API
 
