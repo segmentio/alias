@@ -1,0 +1,13 @@
+{
+  "name": "alias",
+  "repo": "ianstormtaylor/alias",
+  "description": "Component: change an objects keys to new keys.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
