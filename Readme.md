@@ -1,23 +1,39 @@
 
 # alias
 
-  Component: change an objects keys to new keys.
+  Change an object's keys to new keys.
 
 ## Installation
 
     $ component install segmentio/alias
 
+## Example
+
+By dictionary:
+
+```js
+var alias = require('alias');
+var obj = { a: 1 };
+
+alias(obj, { a: 'b' });
+// { b: 1 }
+```
+
+By function:
+
+```js
+var alias = require('alias');
+var obj = { a: 1 };
+
+alias(obj, function (key) { return key + key; });
+// { aa: 1 }
+```
+
 ## API
 
-### alias(object, keys)
+### alias(object, dictionary || convert)
 
-  Changes an objects keys to new key names. `keys` is a 
-  dictionary of the changes:
-
-    alias({a : 1}, {
-        'a' : 'b'
-    });
-    // {b : 1}
+  Changes an `object`'s keys using a `dictionary` of new key names, or a `convert` function.
 
 ## License
 
