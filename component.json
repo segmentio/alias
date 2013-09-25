@@ -1,13 +1,14 @@
 {
   "name": "alias",
   "repo": "segmentio/alias",
-  "description": "Component: change an objects keys to new keys.",
-  "version": "0.0.1",
-  "keywords": [],
-  "dependencies": {},
-  "development": {},
+  "description": "Change an object's keys to new keys.",
+  "version": "0.1.0",
   "license": "MIT",
-  "scripts": [
-    "index.js"
-  ]
+  "dependencies": {
+    "component/type": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "scripts": ["index.js"]
 }

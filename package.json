@@ -1,9 +1,5 @@
 {
   "name": "alias",
-  "version": "0.0.1",
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "*",
-    "should": "*"
-  }
+  "version": "0.1.0",
+  "dependencies": {}
 }
