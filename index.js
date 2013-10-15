@@ -33,6 +33,7 @@ function alias (obj, method) {
 
 function aliasByDictionary (obj, aliases) {
   for (var key in aliases) {
+    if (undefined === obj[key]) continue;
     obj[aliases[key]] = obj[key];
     delete obj[key];
   }

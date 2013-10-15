@@ -1,3 +1,7 @@
+0.1.1 - October 14, 2013
+------------------------
+* don't add extra undefined keys
+
 0.1.0 - September 25, 2013
 --------------------------
 * added aliasing by function
