@@ -5,24 +5,24 @@ describe('alias', function () {
 
   it('should convert by dictionary', function () {
     var obj = { key: 'value' };
-    alias(obj, { key: 'kee' });
-    assert('value' == obj.kee);
-    assert(!obj.key);
+    var clone = alias(obj, { key: 'kee' });
+    assert('value' == clone.kee);
+    assert(!clone.key);
   });
 
   it('should not add undefined aliases', function () {
     var obj = { a: 'value' };
-    alias(obj, { b: 'c' });
+    var clone = alias(obj, { b: 'c' });
     var l = 0;
-    for (var key in obj) l++;
+    for (var key in clone) l++;
     assert(1 == l);
   });
 
   it('should convert by function', function () {
     var obj = { key: 'value' };
-    alias(obj, function (key) { return 'kee'; });
-    assert('value' == obj.kee);
-    assert(!obj.key);
+    var clone = alias(obj, function (key) { return 'kee'; });
+    assert('value' == clone.kee);
+    assert(!clone.key);
   });
 
 });

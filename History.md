@@ -1,3 +1,8 @@
+0.2.0 - October 21, 2013
+------------------------
+* manipulate a copy
+* package for npm
+
 0.1.1 - October 14, 2013
 ------------------------
 * don't add extra undefined keys

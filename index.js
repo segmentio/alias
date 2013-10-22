@@ -1,6 +1,12 @@
 
 var type = require('type');
 
+try {
+  var clone = require('clone');
+} catch (e) {
+  var clone = require('clone-component');
+}
+
 
 /**
  * Expose `alias`.
@@ -18,8 +24,8 @@ module.exports = alias;
 
 function alias (obj, method) {
   switch (type(method)) {
-    case 'object': return aliasByDictionary(obj, method);
-    case 'function': return aliasByFunction(obj, method);
+    case 'object': return aliasByDictionary(clone(obj), method);
+    case 'function': return aliasByFunction(clone(obj), method);
   }
 }
 
@@ -37,6 +43,7 @@ function aliasByDictionary (obj, aliases) {
     obj[aliases[key]] = obj[key];
     delete obj[key];
   }
+  return obj;
 }
 
 
@@ -52,4 +59,5 @@ function aliasByFunction (obj, convert) {
     obj[convert(key)] = obj[key];
     delete obj[key];
   }
+  return obj;
 }
