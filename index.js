@@ -55,9 +55,8 @@ function aliasByDictionary (obj, aliases) {
  */
 
 function aliasByFunction (obj, convert) {
-  for (var key in obj) {
-    obj[convert(key)] = obj[key];
-    delete obj[key];
-  }
-  return obj;
+  // have to create another object so that ie8 won't infinite loop on keys
+  var output = {};
+  for (var key in obj) output[convert(key)] = obj[key];
+  return output;
 }
