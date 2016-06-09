@@ -2,7 +2,7 @@
   "name": "alias",
   "version": "0.2.0",
   "dependencies": {
-    "clone": "component/clone",
-    "type": "component/type"
+    "component-clone": "^0.2.2",
+    "component-type": "^1.2.1"
   }
 }
