@@ -1,3 +1,7 @@
+1.0.1 - June 8, 2016
+-------------------------
+* update index.js to use npm dependencies 
+
 1.0.0 - June 8, 2016
 -------------------------
 * update dependencies to use npm packages 
