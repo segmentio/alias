@@ -1,11 +1,6 @@
 
-var type = require('type');
-
-try {
-  var clone = require('clone');
-} catch (e) {
-  var clone = require('clone-component');
-}
+var type = require('component-type');
+var clone = require('component-clone');
 
 
 /**

@@ -1,3 +1,7 @@
+1.0.0 - June 8, 2016
+-------------------------
+* update dependencies to use npm packages 
+
 0.2.1 - November 15, 2013
 -------------------------
 * ie8 fix
