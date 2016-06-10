@@ -6,7 +6,7 @@
 ## Installation
 
     $ component install segmentio/alias
-    $ npm install segmentio/alias
+    $ npm install @segment/alias
 
 ## Example
 
