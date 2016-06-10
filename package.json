@@ -1,6 +1,6 @@
 {
   "name": "@segment/alias",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "component-clone": "^0.2.2",
     "component-type": "^1.2.1"
